@@ -41,7 +41,7 @@ def main():
             audio_text = audio_to_text("recorded_audio.flac")
             if audio_text:
                 print("Recognized text:", audio_text)
-                if "hkome" in audio_text:
+                if "home" in audio_text:
                     print("Sending to MQTT")
                     send_mqtt_message(audio_text)
         except Exception as e:
